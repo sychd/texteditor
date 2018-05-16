@@ -1,3 +1,4 @@
-<div id="file">
-
-</div>
+<div id="file"
+     [innerHtml]="text"
+     contenteditable="true"
+     (dblclick)="selection.emit()"></div>

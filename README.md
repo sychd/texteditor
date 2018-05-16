@@ -1,5 +1,16 @@
 # Simple text editor
 
+## User manual
+Select word is occurred via double click to perform selection.
+
+When the word is selected, you can select formatting modifications.
+
+When the word is selected, you're able to replace it by synonym.
+To perform this operation:
+
++ select word
++ click on the desired synonym
+
 ## Initial setup
 Run `npm install` in order to setup application
 ng serve should be installed

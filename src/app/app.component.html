@@ -1,5 +1,13 @@
 <app-header></app-header>
 <main>
-  <app-control-panel></app-control-panel>
-  <app-file></app-file>
+  <app-control-panel [hasSelection]="hasSelection"
+                     (modifySelection)="handleModification($event)">
+  </app-control-panel>
+  <app-synonym-panel
+    [word]="selectedWord?.trim()"
+    (synonymSelected)="handleSynonymSelection($event)">
+  </app-synonym-panel>
+  <app-file [text]="initialText$ | async"
+            (selection)="handleSelection()">
+  </app-file>
 </main>

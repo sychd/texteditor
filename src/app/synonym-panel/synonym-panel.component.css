@@ -1,0 +1,25 @@
+:host {
+  background-color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
+}
+.synonym-result-container {
+  width: 600px;
+}
+.synonym-header {
+  font-weight: 700;
+}
+
+.synonym-item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px 10px;
+  border-right: 1px solid #000;
+}
+
+.selected {
+  text-decoration: underline;
+}
