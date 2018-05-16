@@ -1,5 +1,7 @@
 <div id="synonym-panel">
   <span class="synonym-header">Available synonyms:</span>
+</div>
+<div class="synonym-result-container">
   <span class="synonym-item"
         *ngFor="let synonym of (synonyms$$ | async)"
         (click)="performSelection(synonym)"
@@ -7,3 +9,4 @@
     {{ synonym }}
   </span>
 </div>
+

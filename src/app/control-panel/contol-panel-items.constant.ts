@@ -13,4 +13,8 @@ export const CONTROL_PANEL_ITEMS: ControlPanelItem[] = [
     type: 'underline',
     label: '<u>U</u>'
   },
+  {
+    type: 'strikeThrough',
+    label: '<strike>strike</strike>'
+  }
 ];
