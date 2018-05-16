@@ -8,20 +8,23 @@ import { FileComponent } from './file/file.component';
 import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { HeaderComponent } from './header/header.component';
 import { TextService } from './text-service/text.service';
+import { SynonymPanelComponent } from './synonym-panel/synonym-panel.component';
+import {SynonymPanelService} from './synonym-panel/synonym-panel.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     FileComponent,
     ControlPanelComponent,
-    HeaderComponent
+    HeaderComponent,
+    SynonymPanelComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [TextService],
+  providers: [TextService, SynonymPanelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

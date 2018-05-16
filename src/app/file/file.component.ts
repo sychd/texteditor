@@ -1,18 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { TextService } from '../text-service/text.service';
+import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-file',
   templateUrl: './file.component.html',
-  styleUrls: ['./file.component.css']
+  styleUrls: ['./file.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class FileComponent implements OnInit {
+export class FileComponent {
+  @Input()
   public text = '';
-  constructor(private _textService: TextService) {
-  }
-
-  ngOnInit() {
-    this._textService.getMockText().then((result) => this.text = result);
-  }
-
+  @Output()
+  public selection: EventEmitter<void> = new EventEmitter<void>();
 }

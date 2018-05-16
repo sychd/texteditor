@@ -1,5 +1,7 @@
 <div id="format-actions">
-  <button class="format-action" type="button"><b>B</b></button>
-  <button class="format-action" type="button"><i>I</i></button>
-  <button class="format-action" type="button"><u>U</u></button>
+  <button *ngFor="let item of panelItems" class="format-action"
+          [class.active]="isActive(item.type)"
+          [innerHtml]="item.label"
+          type="button"
+          (click)="modify(item.type)"></button>
 </div>

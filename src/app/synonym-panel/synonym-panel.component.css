@@ -1,0 +1,22 @@
+#synonym-panel {
+  background-color: #fff;
+  min-width: 25px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+.synonym-header {
+  font-weight: 700;
+}
+
+.synonym-item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px 10px;
+  border-right: 1px solid #000;
+}
+
+.selected {
+  text-decoration: underline;
+}
